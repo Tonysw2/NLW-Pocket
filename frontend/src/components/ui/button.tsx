@@ -34,7 +34,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         className={button({ variant, size, className })}
       />
     )
-  }
+  },
 )
 
 Button.displayName = 'Button'

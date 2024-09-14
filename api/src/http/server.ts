@@ -1,3 +1,4 @@
+import fastifyCors from '@fastify/cors'
 import fastify from 'fastify'
 import {
   type ZodTypeProvider,
@@ -8,7 +9,6 @@ import { createCompletionRoute } from '../routes/create-completion'
 import { createGoalRoute } from '../routes/create-goal'
 import { getPendingGoalsRoute } from '../routes/get-pending-goals'
 import { getWeekSummaryRoute } from '../routes/get-week-summary'
-import fastifyCors from '@fastify/cors'
 
 const app = fastify().withTypeProvider<ZodTypeProvider>()
 
